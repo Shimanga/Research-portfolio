@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shimanga Mubitana Portfolio</title>
+<style>
+/* BASE */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background: #ECFFDC;
+    color: #000;
+}
+
+/* HEADER */
+.main-header {
+    background-color: #0b3d02; /* dark green */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.main-header h1 {
+    color: #d4a017; /* mustard */
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+/* ABOUT */
+#about {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 500;
+    color: #0b3d02;
+}
+
+#about p {
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto 0;
+}
+
+/* PROJECTS */
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2.section-title {
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 500;
+    color: #0b3d02;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.project-block {
+    background: #f7f9f5;
+    padding: 25px;
+    max-width: 320px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    transition: 0.3s;
+}
+
+.project-block:hover {
+    transform: translateY(-5px);
+}
+
+.project-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #d4a017;
+    margin-bottom: 8px;
+}
+
+.project-img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.project-block a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #0b3d02;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* SKILLS */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: #f7f9f5;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.skill-card li {
+    margin: 6px 0;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    background: #0b3d02;
+    padding: 30px;
+    border-radius: 10px;
+    color:  #FFFFFF;
+}
+
+.contact a {
+    color:  #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0b3d02;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <p class="header-subtitle">Applied Agricultural Research Portfolio</p>
+    <h1>Shimanga Mubitana</h1>
+    <p class="header-subtitle">Quantitative analysis, modeling, and scenario assessment in agriculture, 
+        climate risk, and production systems.</p>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About This Portfolio</h2>
+    <p>
+        This portfolio showcases preliminary research investigations into agricultural systems, climate risk, and production efficiency. Each research output is structured around a question, an analytical methodology, 
+        and insights that could inform deeper academic inquiry or policy evaluation. The intent is to demonstrate data 
+        interpretation and analysis, quantitative modeling, and evidence synthesis.
+    </p>
+</section>
+    
+<!-- Yield Forecasting & Crop Modelling -->
+<section id="yield-forecasting">
+    <h2 class="section-title">Yield Forecasting & Crop Modelling</h2>
+    <div class="projects-container">
+
+        <div class="project-block">
+    <div class="project-number">01</div>
+    <h3>Beyond Rainfall Totals: Excess Moisture, Planting Window Shifts, and Provincial Yield Differences in Zambian Maize Systems</h3>
+    <img src="zm-crops.jpg" class="project-img">
+    <p>Using a 24-year panel across Zambia's ten provinces, this study shows that total seasonal rainfall barely explains maize yield variation on its own. A two-way fixed effects model finds that excess moisture, not drought, is the bigger constraint in most provinces, with rainfall efficiency also varying sharply by region, pointing to soil and management factors as key drivers alongside climate.</p>
+    <a href="https://doi.org/10.5281/zenodo.22809482">View Paper</a>
+</div>
+
+    </div>
+</section>
+
+<!-- Climate & Weather Risk -->
+<section id="climate-risk">
+    <h2 class="section-title">Climate & Weather Risk</h2>
+    <div class="projects-container">
+
+        <div class="project-block">
+            <div class="project-number">02</div>
+            <h3>AFOLU Mitigation Feasibility under Article 6: A Preliminary Assessment</h3>
+            <img src="zm-integration.jpg" class="project-img">
+            <p>This study identifies which agricultural mitigation strategies are most implementable within Article 6 frameworks, accounting for data, monitoring, cost, and institutional constraints in Zambia.</p>
+            <a href="#">Explore Insights</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Market & Price Analytics -->
+<section id="market-analytics">
+    <h2 class="section-title">Market & Price Analytics</h2>
+    <div class="projects-container">
+
+        <div class="project-block">
+            <div class="project-number">03</div>
+            <h3>Zambia Soya Bean Export Analysis 2021–2022 | Market Trends & Prices</h3>
+            <img src="zm-poultry.jpg" class="project-img">
+            <p>This study analyzes Zambia's soya bean export performance, comparing export destinations, prices, and local market returns to assess feasibility and profitability for farmers and agribusinesses.</p>
+            <a href="https://github.com/Shimanga/Zambia-Soya-Beans-Export-Pulse">View Analysis</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Production Economics & Farm Risk Systems -->
+<section id="production-economics">
+    <h2 class="section-title">Production Economics & Farm Risk Systems</h2>
+    <div class="projects-container">
+
+        <div class="project-block">
+            <div class="project-number">04</div>
+            <h3>Broiler Production Economics & Risk Analysis</h3>
+            <img src="zm-poultry.jpg" class="project-img">
+            <p>This project examines how key production factors (feed costs, mortality, weight gain) influence profitability in broiler systems within the Zambian context.</p>
+            <a href="#">Explore Findings</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h4>Data Tools</h4>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Excel</li>
+                <li>Tableau</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h4>Quantitative & Statistical Analysis</h4>
+            <ul>
+                <li>Statistical Analysis</li>
+                <li>Econometrics</li>
+                <li>Regression Analysis</li>
+<li>Panel Data Analysis</li>
+                <li>Time Series Analysis</li>
+                <li>Correlation & Trend Analysis</li>
+<li>Hypothesis Testing</li>
+               
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h4>Agricultural & Climate Analysis</h4>
+            <ul>
+                <li>Agricultural Productivity Analysis</li>
+                <li>Yield Analysis</li>
+                <li>Climate–Yield Analysis</li>
+<li>Production Risk Analysis</li>
+                <li>Agricultural Economics</li>
+                <li>Environmental & Resource Economics</li>
+<li>Agricultural Market Analysis</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h4>Modelling & Forecasting</h4>
+            <ul>
+                <li>Predictive Modelling</li>
+                <li>Yield Forecasting</li>
+                <li>Risk & Scenario Modelling</li>
+<li>Monte Carlo Simulation</li>
+  
+<li>Optimization</li>
+<li>Machine Learning</li>
+<li>Time Series Forecasting</li>
+</ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h3>Request Insights</h3>
+    <p>For inquiries about methodology, findings, or potential collaboration:</p>
+    <p>📞 +260762782224</p>
+    <p>📧 shimanga@agricultureinzambia.com</p>
+    <p>🔗 <a href="https://www.linkedin.com/in/shimanga-mubitana">LinkedIn</a></p>
+</section>
+
+<footer>
+    © 2026 Shimanga Mubitana
+</footer>
+
+</body>
+</html>
