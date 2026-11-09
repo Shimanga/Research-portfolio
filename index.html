@@ -54,7 +54,7 @@ body {
     margin: 10px auto 0;
 }
 
-/* PROJECTS */
+/* GENERAL SECTIONS */
 section {
     padding: 40px 20px;
     max-width: 1100px;
@@ -69,17 +69,39 @@ h2.section-title {
     margin-bottom: 40px;
 }
 
+/* CATEGORIES: side by side on desktop, stacked on mobile */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    align-items: start;
+}
+
+.categories section {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+    min-width: 0;
+}
+
+.categories .section-title {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+/* PROJECT CARDS */
 .projects-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 25px;
-    justify-content: center;
 }
 
 .project-block {
     background: #f7f9f5;
     padding: 25px;
-    max-width: 320px;
     border-radius: 10px;
     border: 1px solid #e0e0e0;
     transition: 0.3s;
@@ -145,11 +167,11 @@ h2.section-title {
     background: #0b3d02;
     padding: 30px;
     border-radius: 10px;
-    color:  #FFFFFF;
+    color: #FFFFFF;
 }
 
 .contact a {
-    color:  #FFFFFF;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
 }
@@ -160,6 +182,13 @@ footer {
     padding: 25px;
     background: #0b3d02;
     color: white;
+}
+
+/* MOBILE: one column at 900px and below */
+@media (max-width: 900px) {
+    .categories {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
 </head>
@@ -179,54 +208,53 @@ footer {
         This portfolio presents research and analytical work on decision-making under uncertainty, with applications in production systems and commodity markets. The work combines agricultural and economic data with statistical, econometric and quantitative methods to investigate production outcomes, market behaviour and risk. Current work extends these methods into optimisation, simulation and computational approaches.
     </p>
 </section>
-    
-<!-- Optimisation & Decision Models -->
-<section id="Optimisation-Decision-Models">
-    <h2 class="section-title">Optimisation & Decision Models</h2>
-    <div class="projects-container">
 
-         <div class="project-block">
-            <div class="project-number">03</div>
-            <h3>Optimisation</h3>
-            <img src="zm-poultry.jpg" class="project-img">
-            <p>This project examines how Optimisation</p>
-            <a href="#">Explore Findings</a>
+<!-- THREE CATEGORIES -->
+<div class="categories">
+
+    <!-- Optimisation & Decision Models -->
+    <section id="Optimisation-Decision-Models">
+        <h2 class="section-title">Optimisation &amp; Decision Models</h2>
+        <div class="projects-container">
+            <div class="project-block">
+                <div class="project-number">01</div>
+                <h3>Optimisation</h3>
+                <img src="zm-poultry.jpg" class="project-img" alt="">
+                <p>This project examines how Optimisation</p>
+                <a href="#">Explore Findings</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Climate & Production Risk -->
-<section id="production-risk">
-    <h2 class="section-title">Climate & Production Risk</h2>
-    <div class="projects-container">
-
-<div class="project-block">
-    <div class="project-number">01</div>
-    <h3>Beyond Rainfall Totals: Excess Moisture, Planting Window Shifts, and Provincial Yield Differences in Zambian Maize Systems</h3>
-    <img src="zm-crops.jpg" class="project-img">
-    <p>Panel regression with SPI drought indexing shows that total seasonal rainfall explains very little of maize yield variation across Zambia’s provinces. Excess moisture, not drought, is the larger constraint in most provinces.</p>
-    <a href="https://doi.org/10.5281/zenodo.22809482">View Paper</a>
-</div>
-    </div>
-</section>
-
-<!-- Commodity Markets & Economics -->
-<section id="commodity-markets">
-    <h2 class="section-title">Commodity Markets & Economics</h2>
-    <div class="projects-container">
-
-        <div class="project-block">
-            <div class="project-number">02</div>
-            <h3>Zambia Soya Bean Export Analysis 2021–2022 | Market Trends & Prices</h3>
-            <img src="zm-poultry.jpg" class="project-img">
-            <p>This study analyzes Zambia's soya bean export performance, comparing export destinations, prices, and local market returns to assess feasibility and profitability for farmers and agribusinesses.</p>
-            <a href="https://github.com/Shimanga/Zambia-Soya-Beans-Export-Pulse">View Analysis</a>
+    <section id="production-risk">
+        <h2 class="section-title">Climate &amp; Production Risk</h2>
+        <div class="projects-container">
+            <div class="project-block">
+                <div class="project-number">02</div>
+                <h3>Beyond Rainfall Totals: Excess Moisture, Planting Window Shifts, and Provincial Yield Differences in Zambian Maize Systems</h3>
+                <img src="zm-crops.jpg" class="project-img" alt="">
+                <p>Panel regression with SPI drought indexing shows that total seasonal rainfall explains very little of maize yield variation across Zambia’s provinces. Excess moisture, not drought, is the larger constraint in most provinces.</p>
+                <a href="https://doi.org/10.5281/zenodo.22809482">View Paper</a>
+            </div>
         </div>
+    </section>
 
-    </div>
-</section>
-    </div>
-</section>
+    <!-- Commodity Markets & Economics -->
+    <section id="commodity-markets">
+        <h2 class="section-title">Commodity Markets &amp; Economics</h2>
+        <div class="projects-container">
+            <div class="project-block">
+                <div class="project-number">03</div>
+                <h3>Zambia Soya Bean Export Analysis 2021–2022 | Market Trends &amp; Prices</h3>
+                <img src="zm-poultry.jpg" class="project-img" alt="">
+                <p>This study analyzes Zambia's soya bean export performance, comparing export destinations, prices, and local market returns to assess feasibility and profitability for farmers and agribusinesses.</p>
+                <a href="https://github.com/Shimanga/Zambia-Soya-Beans-Export-Pulse">View Analysis</a>
+            </div>
+        </div>
+    </section>
+
+</div>
 
 <!-- SKILLS -->
 <section id="skills">
@@ -239,47 +267,46 @@ footer {
                 <li>Python</li>
                 <li>SQL</li>
                 <li>Excel</li>
-              <li>Git/GitHub</li>
+                <li>Git/GitHub</li>
                 <li>Data visualisation</li>
             </ul>
         </div>
 
         <div class="skill-card">
-            <h4>Quantitative & Statistical Analysis</h4>
+            <h4>Quantitative &amp; Statistical Analysis</h4>
             <ul>
                 <li>Statistical Analysis</li>
                 <li>Econometrics</li>
                 <li>Regression Analysis</li>
-<li>Panel Data Analysis</li>
+                <li>Panel Data Analysis</li>
                 <li>Time Series Analysis</li>
-                <li>Correlation & Trend Analysis</li>
-<li>Hypothesis Testing</li>
-               
+                <li>Correlation &amp; Trend Analysis</li>
+                <li>Hypothesis Testing</li>
             </ul>
         </div>
 
         <div class="skill-card">
-            <h4>Optimisation & Operations Research</h4>
+            <h4>Optimisation &amp; Operations Research</h4>
             <ul>
                 <li>Mathematical programming</li>
                 <li>Stochastic and robust optimisation</li>
                 <li>Network and routing models</li>
-<li>Scheduling and resource allocation</li>
+                <li>Scheduling and resource allocation</li>
                 <li>Scenario and decision analysis</li>
             </ul>
         </div>
 
         <div class="skill-card">
-            <h4>Modelling & Risk</h4>
+            <h4>Modelling &amp; Risk</h4>
             <ul>
                 <li>Predictive Modelling</li>
                 <li>Time Series Forecasting</li>
-                <li>Risk & Scenario Modelling</li>
-<li>Monte Carlo Simulation</li>
-<li>Financial Modelling</li>
-<li>Optimization</li>
-<li>Machine Learning</li>
-</ul>
+                <li>Risk &amp; Scenario Modelling</li>
+                <li>Monte Carlo Simulation</li>
+                <li>Financial Modelling</li>
+                <li>Optimization</li>
+                <li>Machine Learning</li>
+            </ul>
         </div>
 
     </div>
