@@ -161,6 +161,41 @@ h2.section-title {
     margin: 6px 0;
 }
 
+/* SKILLS IN PRACTICE */
+.practice-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: -20px auto 30px;
+}
+
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.practice-card {
+    background: #f7f9f5;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.practice-card h4 {
+    margin: 0 0 10px;
+    color: #0b3d02;
+}
+
+.practice-card a {
+    display: inline-block;
+    background: #0b3d02;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 /* CONTACT */
 .contact {
     text-align: center;
@@ -255,6 +290,56 @@ footer {
     </section>
 
 </div>
+
+<!-- SKILLS IN PRACTICE -->
+<!-- For each card: replace href="#" with your link, and change the link text to "Watch on YouTube" if it is a video. Delete any card you do not finish. -->
+<section id="skills-in-practice">
+    <h2 class="section-title">Skills in Practice</h2>
+    <p class="practice-intro">Smaller projects that show each skill at work, on GitHub and YouTube.</p>
+    <div class="practice-grid">
+
+        <div class="practice-card">
+            <h4>Machine Learning</h4>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="practice-card">
+            <h4>Network and Routing Models</h4>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="practice-card">
+            <h4>Scheduling and Resource Allocation</h4>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="practice-card">
+            <h4>Non-linear Programming</h4>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="practice-card">
+            <h4>Robust Optimisation</h4>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="practice-card">
+            <h4>Discrete-event Simulation</h4>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="practice-card">
+            <h4>Financial Modelling</h4>
+            <a href="#">View on GitHub</a>
+        </div>
+
+        <div class="practice-card">
+            <h4>LaTeX</h4>
+            <a href="#">View on GitHub</a>
+        </div>
+
+    </div>
+</section>
 
 <!-- SKILLS -->
 <section id="skills">
